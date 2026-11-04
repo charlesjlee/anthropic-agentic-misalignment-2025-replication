@@ -1,0 +1,19 @@
+{
+  "version": "v1.0.0",
+  "repository_name": "anthropic-agentic-misalignment-2025-replication",
+  "format": "Portable metadata projection; original model-visible data and scores retained; privacy-redactions.json records transformations",
+  "assets": [
+    {
+      "filename": "datacenter-historical-2026-10-29.tar.gz",
+      "bytes": 57888322,
+      "sha256": "32a45664ead7646b759550b6979eb9bbb1dc05b4f3a607e6f88ad98fc8ad2761",
+      "download_url": "https://github.com/charlesjlee/anthropic-agentic-misalignment-2025-replication/releases/download/v1.0.0/datacenter-historical-2026-10-29.tar.gz"
+    },
+    {
+      "filename": "datacenter-update-2026-11-03.zip",
+      "bytes": 448963505,
+      "sha256": "99122f237a60553d0beda55e3705dade52eb5a60c1b1d507d2a60068cd623f42",
+      "download_url": "https://github.com/charlesjlee/anthropic-agentic-misalignment-2025-replication/releases/download/v1.0.0/datacenter-update-2026-11-03.zip"
+    }
+  ]
+}

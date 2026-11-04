@@ -1,0 +1,961 @@
+{
+  "checked_at": "2026-11-01T21:57:32.155500+00:00",
+  "inference_calls": 0,
+  "oauth_models": [
+    {
+      "slug": "gpt-6.1-sol",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6-astra",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6.1-terra",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6-sol",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-reserve",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    },
+    {
+      "slug": "gpt-6-luna",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    },
+    {
+      "slug": "gpt-5.6-sol",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-5.6-terra",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-5.6-luna",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    },
+    {
+      "slug": "codex-auto-review",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  ],
+  "api_catalog_http_status": 200,
+  "api_models": [
+    {
+      "id": "gpt-4-turbo-2024-04-09",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-realtime-2.1-mini",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-realtime-2025-08-28",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "omni-moderation-2024-09-26",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-live-transcribe",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "tts-1",
+      "owned_by": "openai-internal",
+      "shutdown_date": "2027-01-06"
+    },
+    {
+      "id": "gpt-5-mini",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-5-mini-2025-08-07",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-5.4-2026-03-05",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-3.5-turbo-0125",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-5-nano",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-5.1-codex",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "o1-pro",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "omni-moderation-latest",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-realtime-2",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5-search-api",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.5-2026-04-23",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "o4-mini-2025-04-16",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-realtime",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "tts-1-hd",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-06"
+    },
+    {
+      "id": "gpt-realtime-1.5",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.2-pro",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5-chat-latest",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-5.5-pro",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4o-mini-transcribe-2025-03-20",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "gpt-audio-2025-08-28",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "gpt-4o-mini-transcribe-2025-12-15",
+      "owned_by": "system",
+      "shutdown_date": "2027-02-26"
+    },
+    {
+      "id": "gpt-5-pro-2025-10-06",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5-2025-08-07",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "tts-1-1106",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.2-pro-2025-12-11",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-audio-mini-2025-10-06",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-5.5-pro-2026-04-23",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4o-2024-11-20",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "o3-deep-research-2025-06-26",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-5.1",
+      "owned_by": "system",
+      "shutdown_date": "2027-04-01"
+    },
+    {
+      "id": "whisper-1",
+      "owned_by": "openai-internal",
+      "shutdown_date": "2027-02-26"
+    },
+    {
+      "id": "gpt-5-pro",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-realtime-whisper",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4.1-nano",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-image-2",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-3.5-turbo-16k",
+      "owned_by": "openai-internal",
+      "shutdown_date": null
+    },
+    {
+      "id": "text-embedding-ada-002",
+      "owned_by": "openai-internal",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-realtime-2.1",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4.1",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "gpt-5.5",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.4-pro",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-realtime-mini-2025-12-15",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "gpt-4o-mini-tts",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-06"
+    },
+    {
+      "id": "gpt-5.1-codex-max",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-4o-mini-search-preview",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "o3-pro-2025-06-10",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "chat-latest",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.4-pro-2026-03-05",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-realtime-translate",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-realtime-mini",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "gpt-image-1-mini",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-01"
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-3.5-turbo-instruct-0914",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.4-mini-2026-03-17",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "tts-1-hd-1106",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.4",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "o4-mini-deep-research",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-4o-search-preview-2025-03-11",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "text-embedding-3-small",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "o3-2025-04-16",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-5.3-chat-latest",
+      "owned_by": "system",
+      "shutdown_date": "2026-08-10"
+    },
+    {
+      "id": "gpt-5.2-2025-12-11",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "chatgpt-image-latest",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-01"
+    },
+    {
+      "id": "gpt-3.5-turbo",
+      "owned_by": "openai",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-5.1-chat-latest",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-4o",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "gpt-4-turbo",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "o3-pro",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-4o-2024-08-06",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "o3-deep-research",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "o3",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-4o-mini-search-preview-2025-03-11",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "davinci-002",
+      "owned_by": "system",
+      "shutdown_date": "2026-09-28"
+    },
+    {
+      "id": "o3-mini",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-5.4-nano",
+      "owned_by": "system",
+      "shutdown_date": "2027-04-01"
+    },
+    {
+      "id": "gpt-audio-mini-2025-12-15",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "o4-mini-deep-research-2025-06-26",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "o1-pro-2025-03-19",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-3.5-turbo-1106",
+      "owned_by": "system",
+      "shutdown_date": "2026-09-28"
+    },
+    {
+      "id": "babbage-002",
+      "owned_by": "system",
+      "shutdown_date": "2026-09-28"
+    },
+    {
+      "id": "text-embedding-3-large",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4o-2024-05-13",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-audio-mini",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "gpt-4.1-mini-2025-04-14",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "gpt-4o-mini-tts-2025-03-20",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-06"
+    },
+    {
+      "id": "gpt-5.2",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "o1",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-5.4-nano-2026-03-17",
+      "owned_by": "system",
+      "shutdown_date": "2027-04-01"
+    },
+    {
+      "id": "gpt-4o-transcribe-diarize",
+      "owned_by": "system",
+      "shutdown_date": "2027-02-26"
+    },
+    {
+      "id": "gpt-5-codex",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-5.1-2025-11-13",
+      "owned_by": "system",
+      "shutdown_date": "2027-04-01"
+    },
+    {
+      "id": "gpt-4-0613",
+      "owned_by": "openai",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-4o-search-preview",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-image-1.5",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-01"
+    },
+    {
+      "id": "o3-mini-2025-01-31",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-audio-1.5",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4",
+      "owned_by": "openai",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-6-astra",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "sora-2",
+      "owned_by": "system",
+      "shutdown_date": "2026-09-24"
+    },
+    {
+      "id": "gpt-4.1-mini",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "gpt-4o-mini",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "gpt-image-2.5-sunburst",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-image-2.5-flare-2026-09-08",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-6-sol",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-live-1",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.2-chat-latest",
+      "owned_by": "system",
+      "shutdown_date": "2026-08-10"
+    },
+    {
+      "id": "gpt-image-2-2026-04-21",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4o-mini-transcribe",
+      "owned_by": "system",
+      "shutdown_date": "2027-02-26"
+    },
+    {
+      "id": "gpt-3.5-turbo-instruct",
+      "owned_by": "system",
+      "shutdown_date": "2026-09-28"
+    },
+    {
+      "id": "sora-2-pro",
+      "owned_by": "system",
+      "shutdown_date": "2026-09-24"
+    },
+    {
+      "id": "gpt-5",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "gpt-transcribe",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-4.1-nano-2025-04-14",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "o1-2024-12-17",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-4o-mini-tts-2025-12-15",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-06"
+    },
+    {
+      "id": "gpt-image-1",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-audio",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-20"
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "owned_by": "system",
+      "shutdown_date": "2027-04-01"
+    },
+    {
+      "id": "gpt-5-search-api-2025-10-14",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-5.2-codex",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-4.1-2025-04-14",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "gpt-4o-mini-2024-07-18",
+      "owned_by": "system",
+      "shutdown_date": "2027-01-14"
+    },
+    {
+      "id": "gpt-5-nano-2025-08-07",
+      "owned_by": "system",
+      "shutdown_date": "2026-12-11"
+    },
+    {
+      "id": "o4-mini",
+      "owned_by": "system",
+      "shutdown_date": "2026-10-23"
+    },
+    {
+      "id": "gpt-5.1-codex-mini",
+      "owned_by": "system",
+      "shutdown_date": "2026-07-23"
+    },
+    {
+      "id": "gpt-4o-transcribe",
+      "owned_by": "system",
+      "shutdown_date": "2027-02-26"
+    },
+    {
+      "id": "gpt-image-2.5-sunburst-2026-09-08",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-6-luna",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-image-2.5-flare",
+      "owned_by": "system",
+      "shutdown_date": null
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "owned_by": "system",
+      "shutdown_date": null
+    }
+  ],
+  "planned_direct_ids": [
+    {
+      "id": "gpt-4o-2024-05-13",
+      "listed": true
+    },
+    {
+      "id": "gpt-4o-mini-2024-07-18",
+      "listed": true
+    },
+    {
+      "id": "gpt-4o-2024-08-06",
+      "listed": true
+    },
+    {
+      "id": "gpt-4o-2024-11-20",
+      "listed": true
+    },
+    {
+      "id": "gpt-4.1-2025-04-14",
+      "listed": true
+    },
+    {
+      "id": "gpt-4.1-mini-2025-04-14",
+      "listed": true
+    },
+    {
+      "id": "gpt-4.1-nano-2025-04-14",
+      "listed": true
+    },
+    {
+      "id": "o3-2025-04-16",
+      "listed": true
+    },
+    {
+      "id": "o3-pro-2025-06-10",
+      "listed": true
+    },
+    {
+      "id": "gpt-5-2025-08-07",
+      "listed": true
+    },
+    {
+      "id": "gpt-5-mini-2025-08-07",
+      "listed": true
+    },
+    {
+      "id": "gpt-5-nano-2025-08-07",
+      "listed": true
+    },
+    {
+      "id": "gpt-5-pro-2025-10-06",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.1-2025-11-13",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.1-codex",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.1-codex-mini",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.1-codex-max",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.2-2025-12-11",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.2-pro-2025-12-11",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.2-codex",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.4-2026-03-05",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.4-pro-2026-03-05",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.4-mini-2026-03-17",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.4-nano-2026-03-17",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.5-2026-04-23",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.5-pro-2026-04-23",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.6-luna",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.6-sol",
+      "listed": true
+    },
+    {
+      "id": "gpt-5.6-terra",
+      "listed": true
+    },
+    {
+      "id": "gpt-6-astra",
+      "listed": true
+    },
+    {
+      "id": "gpt-6-luna",
+      "listed": true
+    },
+    {
+      "id": "gpt-6-sol",
+      "listed": true
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "listed": true
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "listed": true
+    }
+  ],
+  "limitations": [
+    "Catalog listing is not completed inference or Batch acceptance.",
+    "Remaining subscription quota and API credit balance/expiry not established."
+  ]
+}

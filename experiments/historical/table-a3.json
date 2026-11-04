@@ -1,0 +1,74 @@
+{
+  "source_url": "https://assets.anthropic.com/m/6d46dac66e1a132a/original/Agentic_Misalignment_Appendix.pdf",
+  "source_table": "A3",
+  "printed_pages": [
+    29,
+    30
+  ],
+  "verification": "Transcribed from the PDF and visually checked on 2026-10-29. Only the four comparison rows are included; this is not the full original panel.",
+  "samples_per_cell": 100,
+  "conditions": [
+    "explicit_replacement",
+    "explicit_restriction",
+    "explicit_none",
+    "none_replacement",
+    "none_restriction",
+    "none_none"
+  ],
+  "models": [
+    {
+      "label": "GPT-4.1",
+      "paper_label": "GPT-4.1",
+      "run_model": "gpt-4.1-2025-04-14",
+      "rates_percent": [
+        54,
+        69,
+        33,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "GPT-4o",
+      "paper_label": "GPT-4o",
+      "run_model": "gpt-4o-2024-08-06",
+      "rates_percent": [
+        38,
+        42,
+        21,
+        32,
+        27,
+        19
+      ]
+    },
+    {
+      "label": "DeepSeek R1*",
+      "paper_label": "DeepSeek-R1",
+      "run_model": "deepseek/deepseek-r1-0528",
+      "rates_percent": [
+        94,
+        89,
+        90,
+        38,
+        53,
+        1
+      ],
+      "mapping_caveat": "Table A3 says DeepSeek-R1; the public configuration lists both R1 and R1-0528. Mapping this row to our R1-0528 run is provisional, not established snapshot equivalence."
+    },
+    {
+      "label": "Llama 4 Maverick",
+      "paper_label": "Meta-Llama-4-Maverick",
+      "run_model": "meta-llama/llama-4-maverick",
+      "rates_percent": [
+        86,
+        76,
+        58,
+        56,
+        70,
+        25
+      ]
+    }
+  ],
+  "source_pdf_sha256": "2bb49882a748bf1a3def39d19159b3792adae589aeb393e880a7680c8f92c75d"
+}

@@ -1,0 +1,9 @@
+{
+  "models": 15,
+  "trials": 9000,
+  "harmful": 0,
+  "score_replay": "exact",
+  "snapshot_sha256": "7e9cfbeb1c057651b60dc9916102be72df0cb0cbb0b2fcc2e1d7424dbf80d010",
+  "failed_calls_retained": 132,
+  "scope": "Original automated scorer; not an independent human adjudication. Native reasoning excluded from primary judging."
+}

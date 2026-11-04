@@ -1,0 +1,10 @@
+{
+  "scope": "Portable historical evidence archive; workstation paths normalized; primary trial files and prompts unchanged",
+  "file_count": 14338,
+  "uncompressed_bytes": 421013492,
+  "archive_bytes": 57888322,
+  "archive_sha256": "32a45664ead7646b759550b6979eb9bbb1dc05b4f3a607e6f88ad98fc8ad2761",
+  "download_url": "https://github.com/charlesjlee/anthropic-agentic-misalignment-2025-replication/releases/download/v1.0.0/datacenter-historical-2026-10-29.tar.gz",
+  "original_archive_sha256": "7301cc5f4cf8e9c9c4b32a5ffef3c5804c200d899b9888b9a80c06c44ca8038b",
+  "indexed_files_verified": 14171
+}

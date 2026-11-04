@@ -1,0 +1,64 @@
+Closeout restart and retry amendment - November 2, 2026
+
+Authorization: restart all paused runs, double OpenAI speed, introduce retries.
+Frozen execution manifest: configs/resilient-closeout-v2.json.
+Evidence and source archive: experiments/resilient-closeout-v2/.
+All 13 models retain their existing configuration IDs and 600-trial targets.
+At restart: 2,616/7,800 scored, including 23 reused matching smokes.
+No prompt, effort, output cap, native tool policy, provider route or scoring change.
+
+Scheduling:
+- Gracefully drained prior workers; no outstanding unreceipted reservations.
+- OpenAI actor workers per model: 8 -> 16. Shared OpenAI request-start
+  interval: 0.70 -> 0.35 seconds, maximum 64 simultaneous API calls.
+- All subscription Astra judge calls share the same OpenAI pacer.
+- HTTP 429 increases the interval, honors Retry-After, and successful runs
+  gradually restore the target. Twice the target request pace is not a
+  guarantee of twice completed-trial throughput.
+- Claude/Gemini retain four workers/model; paid routes retain eight.
+
+Retry rules:
+- Transient network errors, overload, rate limits and unreadable responses:
+  at most five total attempts per logical role, counting prior attempts.
+- Truncated output or an unexpected native tool action: at most three
+  total attempts, under identical settings, explicitly labelled replacements.
+- Exponential delay with jitter; honor numeric/date Retry-After and
+  retry-after-ms, including headers inside failed streaming terminal events.
+- Do not start another retry after a 30-minute retry window. An already
+  running transport call uses its existing timeout and can extend this time.
+- Stop the affected model for authentication, billing/quota, policy,
+  model identity or settings errors. These are not transient retries.
+- An exhausted transient/protocol trial remains a gap; the model continues
+  its other scheduled trials and ends 'finished_with_gaps', not 'completed'.
+- Never retry a valid harmful response, safe response or refusal to alter
+  the result. Native tool actions are a previously defined harness-invalid
+  outcome, not a safe result. Report these exclusions as attrition.
+
+Evidence and cost:
+- Retain all prior receipts, streams, errors and charges. Completed actors
+  and judges are reused after receipt hash/request checks.
+- Each new attempt has a separate directory/reservation/call event. A
+  successful replacement links all failed attempts it resolves; historical
+  error totals remain, while unresolved counts decrease.
+- Partial or unreadable responses may have incurred cost; unknown charges
+  stay unknown. Retries do not imply the previous call was unbilled.
+- Extra paid OpenRouter attempts have a $10 conservative reservation limit
+  for this restart, separate from the existing authorized base-run forecast.
+  Reservation assumes <=20k input and <=10k output tokens at pinned prices.
+  The actual pinned requests are below this input bound. This is a bounded
+  retry allowance, not a promise that total paid run costs are $10.
+- Costs/forecasts and counts continue in the dashboard and the existing
+  progress.log CLI feed, updated every 60 seconds.
+
+Previous pauses: DeepSeek HTTP-200 JSON decoding failure; Sonnet/Grok
+Astra judges returned server_is_overloaded with 304/318-second retry hints;
+Gemini Flash invoked manage_task instead of answering the study prompt.
+The first prepared resilient-v1 runner exited before credential access,
+reservations or inference because it examined a historical score schema
+without a sample field. v2 scopes that check to the selected cohorts.
+The v1 manifest/source/logs are retained, not overwritten.
+
+Validation: 31 targeted tests passed, including new failure classification,
+Retry-After, completed-response reuse, retry exhaustion, paid budget and
+multi-attempt resolution checks. Prompt/classifier and native binary hashes
+were checked against the original campaign manifests before freezing.

@@ -1,0 +1,10 @@
+{
+  "archive": "datacenter-update-2026-11-03.zip",
+  "download_url": "https://github.com/charlesjlee/anthropic-agentic-misalignment-2025-replication/releases/download/v1.0.0/datacenter-update-2026-11-03.zip",
+  "bytes": 448963505,
+  "sha256": "99122f237a60553d0beda55e3705dade52eb5a60c1b1d507d2a60068cd623f42",
+  "indexed_files": 93219,
+  "archive_members": 93221,
+  "format": "Portable metadata projection; see privacy-redactions.json in ZIP",
+  "verification": "Index hashes and original score replay verified offline"
+}

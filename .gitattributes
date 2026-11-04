@@ -1,0 +1,12 @@
+# Evidence checksums cover exact bytes; do not normalize line endings in exports.
+evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Matplotlib SVG paths contain harmless generated whitespace.
+ref/*.svg -whitespace linguist-generated=true
+
+docs/images/*.svg -whitespace linguist-generated=true
+# Preserve byte-exact frozen settings, data and exported records.
+configs/** -text
+docs/results/** -text
+experiments/** -text
+ref/** -text

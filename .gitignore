@@ -1,0 +1,48 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ruff_cache/
+external/
+.local/
+*.dpapi
+.DS_Store
+Thumbs.db
+Desktop.ini
+evidence/**/campaign.lock
+evidence/**/*.tmp
+
+# Update campaign evidence is retained in the checksummed release archive.
+/experiments/argon-speed-v1/
+/experiments/claude-quota-restart-v1/
+/experiments/closeout-full-v1/
+/experiments/closeout-routes-v1/
+/experiments/closeout-v1/
+/experiments/deepseek-final-replacement-v1/
+/experiments/gemini-full-v1/
+/experiments/gemini-native-smoke-v1/
+/experiments/gemini-native-smoke-v2/
+/experiments/openai-expansion/
+/experiments/remaining-families/
+/experiments/resilient-closeout-v1/
+/experiments/resilient-closeout-v2/
+/experiments/sol-argon-restart-v1/
+/experiments/update/ledger-snapshot.json
+/evidence/openai-expansion/*.zip
+# Machine-local monitor state and scratch planning material.
+/experiments/closeout-evidence-index-2026-11-02.json
+/ref/*.docx
+/ref/*.jpg
+/ref/*_plan_*.json
+
+# Private work-in-progress, drafts, notes and full pre-public history.
+/_wip/
+# Canonical raw evidence is distributed as release assets.
+/evidence/
+
+# Full trial records and file index are supplied inside the update release ZIP.
+/experiments/update/archive-index.json
+/experiments/update/trials.json

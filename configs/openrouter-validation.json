@@ -1,0 +1,58 @@
+{
+  "status": "authorized_remaining_ten_checks_2026-10-29",
+  "purpose": "Six-condition route validation only; not production",
+  "catalog_snapshot": ".local/research/20261029",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "subject_settings": {
+    "temperature": 1.0,
+    "max_tokens": 10000,
+    "n": 1,
+    "transforms": []
+  },
+  "judge_input": "message.content only, matching original model_client.py lines 631-634; save separate reasoning verbatim if returned, do not append it to primary judge input",
+  "models": [
+    {
+      "model": "deepseek/deepseek-r1-0528",
+      "provider": {
+        "only": [
+          "siliconflow/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "quantizations": [
+          "fp8"
+        ],
+        "max_price": {
+          "prompt": 0.5,
+          "completion": 2.18
+        }
+      },
+      "selection_reason": "Documented FP8 versus cheaper FP4; six hundred 10000-output trials cost only $0.18 more in output at checked rates. Original serving precision still unverified."
+    },
+    {
+      "model": "meta-llama/llama-4-maverick",
+      "provider": {
+        "only": [
+          "parasail/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "quantizations": [
+          "fp8"
+        ],
+        "max_price": {
+          "prompt": 0.35,
+          "completion": 1.0
+        }
+      },
+      "selection_reason": "Documented FP8 instead of cheapest route's unknown precision; approximate extra $2.38 for 600 trials at 3000 input and 10000 output. Original serving precision still unverified."
+    }
+  ],
+  "remaining_checks": [
+    "Authenticated access and sufficient wallet/key allowance",
+    "Confirm endpoint accepts exact historical roles, temperature and output cap",
+    "Verify resolved provider/model and reasoning-token accounting in raw receipts",
+    "One trial in each condition per model; stop before production on truncation or errors",
+    "Confirm OpenRouter reasoning fields are recorded separately and primary judge input is content only"
+  ]
+}
